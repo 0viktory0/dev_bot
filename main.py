@@ -66,5 +66,4 @@ if __name__ == '__main__':
     tg_bot_token = os.environ['TG_BOT_TOKEN']
     tg_chat_id = os.environ['TG_CHAT_ID']
 
-    bot = Bot(token=tg_bot_token)
     get_review(dvmn_token, tg_bot_token, tg_chat_id)
