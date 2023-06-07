@@ -7,7 +7,7 @@ import requests
 from telegram import Bot
 
 
-def get_review(dvmn_token, tg_bot_token, chat_id):
+def get_review(dvmn_token, tg_bot_token, tg_chat_id):
     timestamp = time.time()
     api_url = 'https://dvmn.org/api/long_polling/'
     while True:
@@ -64,7 +64,7 @@ if __name__ == '__main__':
     load_dotenv()
     dvmn_token = os.environ['DVMN_TOKEN']
     tg_bot_token = os.environ['TG_BOT_TOKEN']
-    chat_id = os.environ['CHAT_ID']
+    tg_chat_id = os.environ['TG_CHAT_ID']
 
     bot = Bot(token=tg_bot_token)
-    get_review(dvmn_token, tg_bot_token, chat_id)
+    get_review(dvmn_token, tg_bot_token, tg_chat_id)
