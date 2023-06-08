@@ -11,7 +11,7 @@ pip install -r requirements.txt
 
 * `TG_BOT_TOKEN` - токен Telegram бота, получить его нужно при создании бота у [Отца Ботов](https://telegram.me/BotFather).
 * `DVMN_TOKEN` - персональный токен пользователя API Девмана. 
-* `CHAT_ID` - идентификатор пользователя в Telegram, можно узнать у бота [@userinfobot](https://t.me/userinfobot).
+* `TG_CHAT_ID` - идентификатор пользователя в Telegram, можно узнать у бота [@userinfobot](https://t.me/userinfobot).
 
 
 ## Как запустить
