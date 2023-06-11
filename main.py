@@ -7,6 +7,9 @@ import requests
 from telegram import Bot
 
 
+logger = logging.getLogger()
+
+
 def get_review(dvmn_token, tg_bot_token, tg_chat_id):
     timestamp = time.time()
     api_url = 'https://dvmn.org/api/long_polling/'
@@ -80,7 +83,7 @@ if __name__ == '__main__':
     tg_chat_id = os.environ['TG_CHAT_ID']
     tg_log_bot_token = os.environ['TG_LOG_BOT_TOKEN']
 
-    logger = logging.getLogger()
+
     logger.setLevel(logging.INFO)
     logger.addHandler(LogsHandler(tg_log_bot_token, tg_chat_id))
     logging.info('Бот стартовал!')
