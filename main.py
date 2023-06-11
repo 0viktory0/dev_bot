@@ -60,7 +60,7 @@ def get_review(dvmn_token, tg_bot_token, tg_chat_id):
             pass
 
 
-class MyLogsHandler(logging.Handler):
+class LogsHandler(logging.Handler):
 
     def __init__(self, tg_log_bot_token, tg_chat_id):
         super().__init__()
@@ -82,7 +82,7 @@ if __name__ == '__main__':
 
     logger = logging.getLogger()
     logger.setLevel(logging.INFO)
-    logger.addHandler(MyLogsHandler(tg_log_bot_token, tg_chat_id))
+    logger.addHandler(LogsHandler(tg_log_bot_token, tg_chat_id))
     logging.info('Бот стартовал!')
 
     get_review(dvmn_token, tg_bot_token, tg_chat_id)
