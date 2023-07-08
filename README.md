@@ -10,6 +10,7 @@ pip install -r requirements.txt
 В директории проекта создайте файл `.env` и укажите в нём следующие данные:
 
 * `TG_BOT_TOKEN` - токен Telegram бота, получить его нужно при создании бота у [Отца Ботов](https://telegram.me/BotFather).
+* `TG_LOG_BOT_TOKEN` - токен Telegram бота, который направляет логи об ошибках. 
 * `DVMN_TOKEN` - персональный токен пользователя API Девмана. 
 * `TG_CHAT_ID` - идентификатор пользователя в Telegram, можно узнать у бота [@userinfobot](https://t.me/userinfobot).
 
