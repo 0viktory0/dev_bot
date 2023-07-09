@@ -22,5 +22,17 @@ pip install -r requirements.txt
 $ python main.py
 ```
 
+## Запуск с помощью Docker
+
+Запустить создание образа
+```
+docker build --tag dev_bot 
+```
+
+Запустите контейнер 
+```
+docker run --env-file .env dev_bot
+```
+
 ## Цель проекта
 Код написан в образовательных целях на онлайн-курсе для веб-разработчиков [dvmn.org](https://dvmn.org/).
